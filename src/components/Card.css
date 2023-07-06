@@ -1,0 +1,125 @@
+/*Card*/
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 98%;
+    margin: 0px;
+    padding: 15px;
+    background-color: #1b253b;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: filter 0.5s ease;
+
+    
+  }
+
+  .card.hovered .card-image {
+    filter: grayscale(0%);
+  }
+  
+  .card.hovered {
+    filter: none;
+  }
+
+  
+  .card-image {
+    width: 100px;
+    height: auto;
+    margin: 10px;
+    transition: filter 0.3s;
+    filter: grayscale(80%);
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  
+  .card-button {
+    margin: 0 5px;
+    padding: 8px 16px;
+    width: 60px;
+    text-align: center;
+    background-color: #170f88;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card-button:hover {
+    background-color: #2d37c0;
+  }
+  
+  .card-buttons {
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transition: bottom 0.5s ease, opacity 0.5s ease;
+  }
+  
+  .card-buttons.visible {
+    bottom: 5px;
+    opacity: 1;
+  }
+
+
+
+/*Modal*/
+
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(148, 163, 184, 0.9);
+    padding: 20px;
+    max-width: 90%;
+    max-height: 90%;
+    width: 500px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease;
+    overflow: auto;
+    z-index: 100;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-close-button {
+    width: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 560px) {
+    .modal {
+      width: 90%;
+    }
+
+    .card {
+      width: 98%;
+    }
+  }
+

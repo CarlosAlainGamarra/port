@@ -1,0 +1,53 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 30px 0 30px;
+    background-color: #152038;
+    gap: 20px;
+}
+
+.contact-title {
+    color: #94a3b8b3;
+}
+
+.contact-image {
+    width: 100px;
+    height: 100px;
+}
+
+.contact-number {
+    color: #94a3b8b3;
+}
+
+.contact-social {
+    display: none;
+}
+
+.contact-social-links {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 560px) {
+    .contact-social {
+        color: #94a3b8b3; 
+    }
+
+    .contact-social-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+        justify-content: space-between;
+    }  
+    
+    .c-s-link:hover {
+        transform: translateY(-2px);
+        transition: 0.3s;
+}
+
+}
+

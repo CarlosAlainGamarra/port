@@ -1,0 +1,15 @@
+[
+    {
+        "title":"JavaScript",
+        "image": "../assets/images/js.png"
+    },
+    {
+        "title":"React",
+        "image": "../assets/images/react.png"
+    },
+    {
+        "title":"HTML",
+        "image": "../assets/images/html-5.png"
+    }
+]
+
