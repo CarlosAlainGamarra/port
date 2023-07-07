@@ -32,13 +32,11 @@ const App = () => {
     cursor.style.top = e.pageY + "px";
   };
 
-
-
-
+  //Hooks
   const [theme, setTheme] = useState('dark');
   const [activeMenu, setActiveMenu] = useState('about');
 
-
+  //Handlers & functions
   const toggleTheme = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');
   };
@@ -51,10 +49,27 @@ const App = () => {
   const handleMenuClick = (menu) => {
     setActiveMenu(menu);
   };
+  
 
   return (
     <nav className={`app ${theme} `}  onMouseMove={handleMouseMove}>
       <div id="cursor" style={{ position: "absolute" }}></div>
+
+
+      <div className="lucy" style={{ top: '40px', left: '40px'}}/>
+      <div className="lucy" style={{ top: '100px', left: '100px'}}/>
+      <div className="lucy" style={{ top: '400px', left: '600px'}}/>
+      <div className="lucy" style={{ top: '70px', left: '500px'}}/>
+      <div className="lucy" style={{ top: '700px', left: '900px'}}/>
+      <div className="lucy" style={{ top: '500px', left: '700px'}}/>
+      <div className="lucy" style={{ top: '300px', left: '800px'}}/>
+      <div className="lucy" style={{ bottom: '20px', left: '10px'}}/>
+      <div className="lucy" style={{ bottom: '10px', left: '-80px'}}/>
+      <div className="lucy" style={{ top: '40px', left: '-40px'}}/>
+      <div className="lucy" style={{ top: '10px', left: '-80px'}}/>
+
+
+
 
       <div className="menu">
 
@@ -69,13 +84,13 @@ const App = () => {
 
         <footer className="social-links">
           <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-            <img src={linkedin} alt="linkedin" width={30}/>
+            <img src={linkedin} alt="linkedin" width={35}/>
           </a>
           <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-            <img src={github} alt="github" width={25}/>
+            <img src={github} alt="github" width={30}/>
           </a>
           <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-            <img src={instagram} alt="instagram" width={30}/>
+            <img src={instagram} alt="instagram" width={35}/>
           </a>
         </footer>  
 

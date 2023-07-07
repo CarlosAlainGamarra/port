@@ -35,8 +35,10 @@ const Card = () => {
       onMouseLeave={handleMouseLeave}
     > 
       
-      
-      <h3 className="card-title">titulo</h3>
+      <div className='card-content'>
+        <h3 className="card-title">titulo</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan turpis nec varius lobortis.</p>
+      </div>
 
       <div className={`card-buttons ${isHovered ? 'visible' : ''}`}>
         <a href="#" className="card-button" onClick={openModal}>Moore</a>
@@ -52,7 +54,9 @@ const Card = () => {
         className="modal"
         overlayClassName="modal-overlay"
       >
+        <img src={barca} alt="barca" className='modal-image'/>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan turpis nec varius lobortis.</p>
+        <a href="#" className="card-button">Visit</a>
         <img src={close} alt="close" onClick={closeModal} className="modal-close-button"/>
       </Modal>
     </div>

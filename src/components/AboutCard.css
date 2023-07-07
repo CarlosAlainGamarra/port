@@ -1,69 +1,68 @@
+.aboutcard {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #0f172a;
+  color: #94a3b8;
+  transition: color 0.3s ease;
+  filter: contrast(0.93);
+}
 
+.aboutcard:hover {
+  color: #5eead4;
+  filter: contrast(0.8);
+}
+
+.aboutcard-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.aboutcard-title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  transition: text-shadow 0.3s ease;
+}
+
+.aboutcard:hover .aboutcard-title {
+  text-shadow: 0 0 10px #5eead4, 0 0 20px #5eead4, 0 0 30px #5eead4;
+}
+
+.aboutcard-paragraph {
+  font-size: 14px;
+  color: #ccc;
+  margin-top: 20px;
+  transition: text-shadow 0.3s ease;
+}
+
+.aboutcard:hover .aboutcard-paragraph {
+  color: #8ff7e7;
+}
+
+.aboutcard-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  padding: 20px 0 10px 0;
+}
+
+.aboutcard-image {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 769px) {
   .aboutcard {
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: #0f172a;
-    color: #94a3b8;
-    transition: color 0.3s ease;
-    filter: contrast(0.93);
-  }
-  
-  .aboutcard:hover {
-    color: #5eead4;
-    filter: contrast(0.8);
-  }
-  
-  .aboutcard-content {
-    flex: 1;
-    padding: 20px;
-  }
-  
-  .aboutcard-title {
-    font-size: 25px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    transition: text-shadow 0.3s ease;
-  }
-  
-  .aboutcard:hover .aboutcard-title {
-    text-shadow: 0 0 10px #5eead4, 0 0 20px #5eead4, 0 0 30px #5eead4;
-  }
-  
-  .aboutcard-paragraph {
-    font-size: 14px;
-    color: #ccc;
-    margin-top: 20px;
-    transition: text-shadow 0.3s ease;
-  }
-  
-  .aboutcard:hover .aboutcard-paragraph {
-    color: #8ff7e7 
-  }
-  
-  .aboutcard-image-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 20%;
-    padding: 20px 0 10px 0;    
   }
-  
-  .aboutcard-image {
-    width: 110px;
-    height: 110px;
-    border-radius: 50%;
-  }
-  
-  @media screen and (max-width: 560px) {
-    .aboutcard {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  }
+}
 
 .about-button {
   background-color: #087061;
@@ -78,52 +77,88 @@
   cursor: pointer;
 }
 
-.about-button:hover {
-  background-color: #088370;
+.about-button:active {
+  transform: translateY(1px);
+  background-color: #ff00de;
 }
 
-.toggle-open {
-  opacity: 0; 
-  animation: deslizarToggleOpen 1s ease-in-out forwards;
+.about-button:hover {
+  /*background-color: #088370; */
+  color: white;
 }
+
+
+.toggle-open {
+  opacity: 0;
+  animation: deslizarToggleOpen 1s ease-in-out forwards;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #0f172a;
+  color: #94a3b8;
+  transition: color 0.3s ease;
+  filter: contrast(0.93);
+  height: 400px;
+}
+
 
 @keyframes deslizarToggleOpen {
   0% {
-    opacity: 0; 
-    transform: translateY(-100%); 
+    opacity: 0;
+    transform: translateY(-100%);
   }
   100% {
-    opacity: 1; 
-    transform: translateY(0); 
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 .aboutcard-content p {
-  opacity: 0; 
+  opacity: 0;
   animation: deslizarcard 1.5s ease-in-out forwards;
-  margin-left: 10px;
 }
 
 @keyframes deslizarcard {
   0% {
-    opacity: 0; 
-    transform: translateX(100%); 
+    opacity: 0;
+    transform: translateX(100%);
   }
   100% {
-    opacity: 1; 
-    transform: translateX(0); 
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
+/*Scroll*/
+.scroll-down {
+  position: fixed;
+  width: 25px;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.scroll-up {
+  position: fixed;
+  width: 25px;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.scroll-up:active {
+  transform: translateX(-50%) scale(1.1);
+}
+
+.scroll-down:active {
+  transform: translateX(-50%) scale(1.1);
+}
 
 
-
-
-
-
-
-
-
-
-
-
+.intro {
+  margin-top: 30px;
+  scroll-behavior: smooth;
+  width: 40px;
+}
