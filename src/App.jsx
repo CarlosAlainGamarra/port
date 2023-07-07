@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import './App.css';
 
@@ -82,10 +81,12 @@ const App = () => {
 
       </div>
       <div className="content cursor">
+
         <About />
         <Skills />
         <Projects />
         <Contact />
+
       </div>
     </nav>
   );

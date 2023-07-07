@@ -1,3 +1,4 @@
+
 //Assets
 import './AboutCard.css'
 import carlosgamarra from '../assets/images/carlosgamarra.jpg'
@@ -5,9 +6,7 @@ import carlosgamarra from '../assets/images/carlosgamarra.jpg'
 import { useState } from 'react'
 
 export const AboutCard = () => {
-
   const [isExpanded, setIsExpanded] = useState(false)
-
 
   const handleToggle = () => {
     setIsExpanded(!isExpanded)
@@ -26,7 +25,7 @@ export const AboutCard = () => {
           <h className="aboutcard-title">Carlos Gamarra</h>
           <div>
             <p className="aboutcard-paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan turpis nec varius lobortis.
+            Hi! I am a creative and enthusiastic FrontEnd web developer. Proficient in HTML, CSS, JavaScript and React.
             </p>  
           </div>
 
@@ -41,9 +40,29 @@ export const AboutCard = () => {
         {isExpanded && (
           <div className="aboutcard toggle-open">
             <div className="aboutcard-content">
-              <p>Contenido oculto que se mostrará cuando el botón sea clicado.</p>
-              <p>Otro contenido oculto.</p>
+              <p>
+                Focused on creating and maintaining high-performance applications under a well-organized architecture. Proactive, collaborative and able to function well in a team.
+              </p>
+              <br />
+              <h3>
+                EDUCATION
+              </h3>
+              <h4>
+              Universidad Central de Venezuela (VE)
+              </h4>
+              <ul>
+                <p>Structural engineer</p>
+                <p>Structural design modules through software</p>
+                <p>Informatics for engineers</p>
+              </ul>
+              <h4>
+                Universidad Tecnológica Nacional (AR)
+              </h4>
+                <p>Introduction to backend development with Node.js</p>
+              <h4>UDEMY</h4>
+                <p>Universidad de desarrollo web. FrontEnd developer</p>
             </div>
+
           </div>
         ) }
 

@@ -170,6 +170,10 @@
     display: none;
   }
 
+  #cursor {
+    display: none;
+  }
+
 }
 
 
@@ -218,8 +222,8 @@ h2{
   margin-bottom: 20px;
 
 
-  overflow: hidden; /* Oculta los elementos que se salen del contenedor */
-  white-space: nowrap; /* Evita el salto de línea */
+  overflow: hidden; 
+  white-space: nowrap; 
 }
 
 .skillcard {
@@ -228,8 +232,7 @@ h2{
   align-items: center;
   border: 1px solid rgb(15 23 42);
   width: 100px;
-  /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
-  /*background-color: #fff;*/
+
   color: #e5e5e5;
   margin: 15px 0 15px 0;
 
@@ -252,8 +255,6 @@ h2{
     transform: translateX(0); 
   }
 }
-
-
 
 
 
@@ -328,4 +329,8 @@ h2{
     box-shadow: 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff, 0 0 120px #ff00de, 0 0 240px #ff00de, 0 0 280px #ff00de, 0 0 360px #ff00de, 0 0 1200px #ff00de;
   }
 }
+
+
+
+
 

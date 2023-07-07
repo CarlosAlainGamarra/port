@@ -23,7 +23,7 @@
   .aboutcard-title {
     font-size: 25px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     transition: text-shadow 0.3s ease;
   }
   
@@ -34,6 +34,7 @@
   .aboutcard-paragraph {
     font-size: 14px;
     color: #ccc;
+    margin-top: 20px;
     transition: text-shadow 0.3s ease;
   }
   
@@ -47,7 +48,6 @@
     align-items: center;
     justify-content: center;
     width: 20%;
-    /*background-color: #f0f0f0;*/
     padding: 20px 0 10px 0;    
   }
   
@@ -55,7 +55,6 @@
     width: 110px;
     height: 110px;
     border-radius: 50%;
-    /*object-fit: cover;*/
   }
   
   @media screen and (max-width: 560px) {
@@ -69,7 +68,7 @@
 .about-button {
   background-color: #087061;
   color: #5eead4;
-  margin-top: 10px;
+  margin-top: 20px;
   padding: 8px 16px;
   width: 100px;
   text-align: center;
@@ -98,4 +97,33 @@
     transform: translateY(0); 
   }
 }
+
+.aboutcard-content p {
+  opacity: 0; 
+  animation: deslizarcard 1.5s ease-in-out forwards;
+  margin-left: 10px;
+}
+
+@keyframes deslizarcard {
+  0% {
+    opacity: 0; 
+    transform: translateX(100%); 
+  }
+  100% {
+    opacity: 1; 
+    transform: translateX(0); 
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
