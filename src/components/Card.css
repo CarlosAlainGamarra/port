@@ -133,7 +133,7 @@
   }
 
   .modal p {
-    margin: 20px 40px 0 20px;
+    margin: 20px 20px 0 20px;
   }
   
   @media (max-width: 769px) {
@@ -151,6 +151,10 @@
 
     .card-content {
       margin-bottom: 50px;
+    }
+
+    .modal p {
+      margin: 20px 40px 0px 20px;
     }
   }
 

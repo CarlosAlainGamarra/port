@@ -12,6 +12,7 @@ const Card = () => {
   const [isHovered, setIsHovered] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+
   const handleMouseEnter = () => {
     setIsHovered(true);
   };

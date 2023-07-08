@@ -8,6 +8,8 @@ import  instagram from './assets/icons/instagram.svg'
 import sun from './assets/icons/sun.png'
 import moon from './assets/icons/moon.png'
 
+import barca from './assets/images/barca.jpg'
+
 //Skills
 import js from './assets/images/js.svg'
 import react from './assets/images/react.svg'
@@ -188,11 +190,12 @@ const Skills = () => {
 
 //Projects
 const Projects = () => {
+  const title = 'hola'
   return (
     <div id="projects" className="projects">
       <h2>Projects</h2>
       <div className='projects-container'>
-        <Card />
+        <Card image={barca} title={title}/>
         <Card />
         <Card />
         <Card />

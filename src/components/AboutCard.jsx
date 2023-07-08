@@ -39,7 +39,7 @@ export const AboutCard = () => {
         </div>
 
         <div className='aboutcard-content'>
-          <h className='aboutcard-title'>Carlos Gamarra</h>
+          <h2 className='aboutcard-title'>Carlos Gamarra</h2>
           <div>
             <p className='aboutcard-paragraph'>
               Hi! I am a creative and enthusiastic FrontEnd web developer.

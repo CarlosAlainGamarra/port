@@ -5,6 +5,7 @@
   
 }
 
+
 .app {
   display: flex;
   flex-direction: row;
@@ -13,6 +14,7 @@
   overflow: hidden;
   cursor: none;
 }
+
 
 .light {
   background-color: #94a3b8;
@@ -54,7 +56,7 @@
 
 .menu li:hover {
   transform: translateX(20px);
-  color: rgb(148 163 184)
+  color: rgb(148 163 184);
 }
 
 
@@ -136,7 +138,7 @@
     z-index: 1;
     max-width: 100%;
     max-height: 15%;
-    gap: 20px;
+    gap: 20px; 
   }
 
   .menu-links {
@@ -155,6 +157,7 @@
     align-items: center;
     justify-content: space-between;
     margin-top: 5px;
+    
   }
 
   .menu li:hover {
@@ -337,7 +340,7 @@ h2{
 }
 
 
-/*light-bugs*/
+/*Fireflys*/
 
 @keyframes fluter {
   0% {
