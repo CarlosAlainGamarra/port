@@ -4,6 +4,7 @@ import carlosgamarra from "../assets/images/carlosgamarra.jpg";
 import up from "../assets/icons/up.svg";
 import down from "../assets/icons/down.svg";
 
+
 import { useState, useRef } from "react";
 
 export const AboutCard = () => {
@@ -41,10 +42,9 @@ export const AboutCard = () => {
         <div className='aboutcard-content'>
           <h2 className='aboutcard-title'>Carlos Gamarra</h2>
           <div>
-            <p className='aboutcard-paragraph'>
-              Hi! I am a creative and enthusiastic FrontEnd web developer.
-              Proficient in HTML, CSS, JavaScript and React.
-            </p>
+            <h3 className='aboutcard-paragraph'>
+              Web developer
+            </h3>
           </div>
 
           <div onClick={handleToggle} className='about-button'>
@@ -65,7 +65,10 @@ export const AboutCard = () => {
             style={{ height: "300px", overflow: "hidden" }}
           >
             <p>
-              Focused on creating and maintaining high-performance applications
+              Hi there! Im a creative and enthusiastic web developer with a passion for building responsive and
+              user-friendly websites. I have experience in HTML, CSS, JavaScript, and
+              React. I enjoy turning complex problems into simple, beautiful, and
+              intuitive solutions, focused on creating and maintaining high-performance applications
               under a well-organized architecture. Proactive, collaborative and
               able to function well in a team.
             </p>
@@ -85,23 +88,13 @@ export const AboutCard = () => {
             <h4>UDEMY</h4>
             <p>Universidad de desarrollo web. FrontEnd developer</p>
             <br />
-            <p>
-              Focused on creating and maintaining high-performance applications
-              under a well-organized architecture. Proactive, collaborative and
-              able to function well in a team.
-            </p>
-            <br />
-            <h3>EDUCATION</h3>
-            <h4>Universidad Central de Venezuela (VE)</h4>
+            <h3>Skills</h3>
             <ul>
-              <p>Structural engineer</p>
-              <p>Structural design modules through software</p>
-              <p>Informatics for engineers</p>
+              <p>English</p>
+              <p>Troubleshooting and quality control</p>
+              <p>Agile process</p>
+              <p>Self taught. Enthusiastic about learning new technologies</p>
             </ul>
-            <h4>Universidad Tecnológica Nacional (AR)</h4>
-            <p>Introduction to backend development with Node.js</p>
-            <h4>UDEMY</h4>
-            <p>Universidad de desarrollo web. FrontEnd developer</p>
           </div>
         </div>
       )}

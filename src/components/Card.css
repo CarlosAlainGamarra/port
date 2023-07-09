@@ -96,7 +96,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgb(148, 163, 184, 0.9);
+    background-color: rgb(148, 163, 184, 0.8);
     padding: 0 0 20px 0;
     max-width: 90%;
     max-height: 90%;
@@ -158,3 +158,42 @@
     }
   }
 
+.modal-icons-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    margin-right: 10px;
+}
+
+.modal-icon {
+    width: 25px;
+    filter: sepia(0.6);
+}
+
+.modal-git-link {
+  width: 25px;
+  padding-left: 10px;
+  animation: pulse 1.5s infinite;
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

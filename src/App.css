@@ -205,11 +205,6 @@
   cursor: pointer;
 }
 
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 h2{
   padding-bottom: 15px;
   padding-top: 50px;
@@ -229,6 +224,11 @@ h2{
   padding-top: 20px;
 }
 
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .skillcard {
   display: flex;
   flex-direction: column;
@@ -241,21 +241,6 @@ h2{
   opacity: 0; 
   animation: deslizar 1.5s ease-in-out forwards;
 }
-
-
-
-@keyframes deslizar {
-  0% {
-    opacity: 0; 
-    transform: translateX(-100%); 
-  }
-  100% {
-    opacity: 1; 
-    transform: translateX(0); 
-  }
-}
-
-
 
 .skillcard:hover {
   border: 1px solid #ccc;
@@ -279,19 +264,16 @@ h2{
   transition: text-shadow 0.3s ease;
 }
 
-
 .skillcard-paragraph {
   font-size: 14px;
   color: #ccc;
   transition: text-shadow 0.3s ease;
 }
 
-
 .skillcard-image-container {
   width: 100%;
   background-color: #f0f0f0;
 }
-
 
 .skillcard-image {
   width: 90%;
@@ -305,7 +287,6 @@ h2{
 
 }
 
-
 .projects-container {
   display: flex;
   flex-direction: column;
@@ -314,6 +295,17 @@ h2{
   gap: 20px;
 }
 
+
+@keyframes deslizar {
+  0% {
+    opacity: 0; 
+    transform: translateX(-100%); 
+  }
+  100% {
+    opacity: 1; 
+    transform: translateX(0); 
+  }
+}
 
 
 /*cursor*/

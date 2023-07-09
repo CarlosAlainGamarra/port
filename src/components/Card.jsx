@@ -3,6 +3,13 @@
 import barca from '../assets/images/barca.jpg'
 import close from '../assets/icons/close.png'
 
+import react from "../assets/images/react.svg"
+import css from "../assets/images/css.svg"
+import html from "../assets/images/html.svg"
+import js from "../assets/images/js.svg"
+import github2 from "../assets/images/github2.svg"
+
+
 
 import { useState } from 'react';
 import Modal from 'react-modal';
@@ -57,8 +64,19 @@ const Card = () => {
       >
         <img src={barca} alt="barca" className='modal-image'/>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan turpis nec varius lobortis.</p>
-        <a href="#" className="card-button">Visit</a>
+        
         <img src={close} alt="close" onClick={closeModal} className="modal-close-button"/>
+        <div className='card-footer'>
+          <a href="#" className="card-button">Visit</a>
+          
+          <div className='modal-icons-container'>
+            <img src={github2} alt="github" className='modal-git-link'/>
+            <img src={react} alt="react" className='modal-icon'/>
+            <img src={js} alt="js" className='modal-icon'/>
+            <img src={html} alt="html" className='modal-icon'/>
+            <img src={css} alt="css" className='modal-icon'/>
+          </div>
+        </div>  
       </Modal>
     </div>
   );

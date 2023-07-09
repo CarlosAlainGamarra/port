@@ -4,8 +4,6 @@ import Wellcome from './components/Wellcome'
 //Router
 import { Routes, Route } from 'react-router-dom'
 
-
-
 function Index() {
   return (
     <div>     
