@@ -17,6 +17,7 @@
 .aboutcard-content {
   flex: 1;
   padding: 20px;
+  text-align: justify;
 }
 
 .aboutcard-title {
@@ -98,6 +99,7 @@
   height: 400px;
 }
 
+
 @keyframes deslizarToggleOpen {
   0% {
     opacity: 0;
@@ -108,6 +110,7 @@
     transform: translateY(0);
   }
 }
+
 
 .aboutcard-content p {
   opacity: 0;

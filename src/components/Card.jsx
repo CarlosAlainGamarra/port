@@ -36,6 +36,19 @@ const Card = () => {
     setIsModalOpen(false);
   };
 
+
+  //Close Modal
+  window.addEventListener('mouseup', (e) => {
+    const box = document.getElementById('box')
+    if(e.target != box && e.target.parentNode != box){    
+      box.style.display = 'none'
+      setTimeout(() => {
+        setIsModalOpen(false)
+      }, 0.000001);    
+    }
+  })
+
+
   return (
     <div
       className={`card ${isHovered ? 'hovered' : ''}`}
@@ -56,6 +69,7 @@ const Card = () => {
       <img src={barca} alt="Card" className="card-image" />
 
       <Modal
+        id='box'
         isOpen={isModalOpen}
         onRequestClose={closeModal}
         contentLabel="Modal"
@@ -67,7 +81,7 @@ const Card = () => {
         
         <img src={close} alt="close" onClick={closeModal} className="modal-close-button"/>
         <div className='card-footer'>
-          <a href="#" className="card-button">Visit</a>
+          <a  href="https://www.google.com" className="card-button" target="_blank" rel='noreferrer'>Visit</a>
           
           <div className='modal-icons-container'>
             <img src={github2} alt="github" className='modal-git-link'/>

@@ -17,6 +17,7 @@ export const AboutCard = () => {
     setIsExpanded(!isExpanded);
   };
 
+
   //Scroll
   const scrollContainerRef = useRef(null);
 
@@ -46,15 +47,14 @@ export const AboutCard = () => {
               Web developer
             </h3>
           </div>
-
           <div onClick={handleToggle} className='about-button'>
             {isExpanded ? "Less..." : "Moore..."}
           </div>
         </div>
       </div>
 
-      {isExpanded && (
-        <div className='toggle-open'>
+      {isExpanded &&  (
+        <div className={'toggle-open'}>
           <img src={up} className='scroll-up' onClick={handleScrollUp} />
 
           <img src={down} className='scroll-down' onClick={handleScrollDown} />
@@ -70,7 +70,7 @@ export const AboutCard = () => {
               React. I enjoy turning complex problems into simple, beautiful, and
               intuitive solutions, focused on creating and maintaining high-performance applications
               under a well-organized architecture. Proactive, collaborative and
-              able to function well in a team.
+              a team worker.
             </p>
             <br />
             <br />

@@ -16,7 +16,13 @@ import ContactCard from './components/ContactCard';
 import Skills from './components/Skills';
 import FireFlys from './components/FireFlys';
 
-
+//Close Modal
+/*window.addEventListener('mouseup', (e) => {
+  const box = document.getElementById('box')
+  if(e.target != box && e.target.parentNode != box){
+    box.style.display = 'none'
+  }
+})*/
 
 
 //App
@@ -55,7 +61,8 @@ const App = () => {
 
       <div className="menu">
 
-        <img src={theme === "light"? moon : sun } alt="change -theme" onClick={toggleTheme} className="sunmoon"/>
+        {/*<img src={theme === "light"? moon : sun } alt="change -theme" onClick={toggleTheme} className="sunmoon"/>*/}
+        <div src={theme === "light"? moon : sun } alt="change -theme" onClick={toggleTheme} className="sunmoon"/>
 
         <ul className="menu-links">
           <li onClick={() => scrollToSection('about') & handleMenuClick('about')} className={activeMenu === 'about' ? 'active' : ''}>About</li>
