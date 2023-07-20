@@ -48,7 +48,7 @@ export const AboutCard = () => {
             </h3>
           </div>
           <div onClick={handleToggle} className='about-button'>
-            {isExpanded ? "Less..." : "Moore..."}
+            {isExpanded ? "Less..." : "More..."}
           </div>
         </div>
       </div>
