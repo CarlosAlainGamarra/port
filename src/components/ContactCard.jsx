@@ -12,7 +12,7 @@ const Contact = () => {
       <h4 className="contact-title">
         If youd like to get in touch, feel free to send me an email at:
       </h4>
-      <h3 className="contact-email">carlosalaingamarra@gmail.com</h3>
+      <h3 className="contact-email">gamarracarlosalain@gmail.com</h3>
       <br />
       <h4>Call me:</h4>
       <h3 className="contact-number">+54 351 541 7574 (AR)</h3>

@@ -8,6 +8,9 @@ import  instagram from './assets/icons/instagram.svg'
 import sun from './assets/icons/sun.png'
 import moon from './assets/icons/moon.png'
 
+//Content
+import projects from './assets/projects/'
+
 
 //Components
 import { AboutCard } from './components/AboutCard'
@@ -115,10 +118,13 @@ const Projects = () => {
     <div id="projects" className="projects">
       <h2>Projects</h2>
       <div className='projects-container'>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        <ul>
+          {projects.map(project => (
+            <li key={project.title}>
+              <Card project={project}/>
+            </li>
+          ))}
+        </ul>
       </div>     
     </div>
   );

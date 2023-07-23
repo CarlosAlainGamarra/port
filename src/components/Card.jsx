@@ -15,10 +15,11 @@ import { useState } from 'react';
 import Modal from 'react-modal';
 import './Card.css';
 
-const Card = () => {
+const Card = ({project}) => {
   const [isHovered, setIsHovered] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+  const techs = project.techs
 
   const handleMouseEnter = () => {
     setIsHovered(true);
@@ -57,16 +58,16 @@ const Card = () => {
     > 
       
       <div className='card-content'>
-        <h3 className="card-title">titulo</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan turpis nec varius lobortis.</p>
+        <h3 className="card-title">{project.title}</h3>
+        <p>{project.description}</p>
       </div>
 
       <div className={`card-buttons ${isHovered ? 'visible' : ''}`}>
         <a href="#" className="card-button" onClick={openModal}>Moore</a>
-        <a href="#" className="card-button">Visit</a>
+        <a href={project.url} target="_blank" rel='noreferrer' className="card-button">Visit</a>
       </div>
       
-      <img src={barca} alt="Card" className="card-image" />
+      <img src={project.image} alt="Card" className="card-image" />
 
       <Modal
         id='box'
@@ -76,15 +77,22 @@ const Card = () => {
         className="modal"
         overlayClassName="modal-overlay"
       >
-        <img src={barca} alt="barca" className='modal-image'/>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan turpis nec varius lobortis.</p>
+        <img src={project.image} alt="barca" className='modal-image'/>
+        <p>
+        <ul className='tech-list'>{techs.map (tech => (
+          <li key={project.title} className='tech-item'>
+            {tech}
+          </li>
+        ))}
+       </ul>
+        </p>
         
         <img src={close} alt="close" onClick={closeModal} className="modal-close-button"/>
         <div className='card-footer'>
-          <a  href="https://www.google.com" className="card-button" target="_blank" rel='noreferrer'>Visit</a>
+          <a  href={project.url} className="card-button" target="_blank" rel='noreferrer'>Visit</a>
           
           <div className='modal-icons-container'>
-            <img src={github2} alt="github" className='modal-git-link'/>
+            <a href={project.git} rel='noreferrer' target='_blank'><img src={github2} alt="github" className='modal-git-link'/></a>
             <img src={react} alt="react" className='modal-icon'/>
             <img src={js} alt="js" className='modal-icon'/>
             <img src={html} alt="html" className='modal-icon'/>
